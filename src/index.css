@@ -260,6 +260,14 @@ display: flex;
   color: rgb(252, 244, 244);
 }
 
+@media (max-width: 768px) {
+  .register-button{
+ white-space: nowrap;
+ right: 30%;
+ top: 50%px;
+}}
+
+
 @media (max-width: 480px) {
   .register-button{
  white-space: nowrap;
