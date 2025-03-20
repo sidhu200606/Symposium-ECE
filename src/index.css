@@ -338,3 +338,8 @@ nav a {
 .insta{
   color: #00bfff;
 }
+@media (max-width:480px) {
+  .mark{
+    bottom: 10%;
+  }
+}

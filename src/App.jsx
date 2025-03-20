@@ -82,8 +82,8 @@ const Home = () => {
           padding: "10px",
           textAlign: "center",
           zIndex: 1000,
-          marginBottom: "20px",
-        }}
+          marginBottom: "30px",
+        }} className="mark"
       >
         <marquee
           behavior="scroll"
