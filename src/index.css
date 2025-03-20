@@ -201,7 +201,7 @@ display: flex;
 }
 .center-paragraph {
   position: absolute;
-  top: 45%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -228,7 +228,7 @@ display: flex;
 
 @media (max-width: 480px) {
   .center-paragraph {
-    font-size: 13.5px;
+    font-size: 14px;
     max-width: 95%;
     text-align: center;
   padding-bottom: 50px;
