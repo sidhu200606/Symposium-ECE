@@ -221,14 +221,14 @@ display: flex;
 
 @media (max-width: 768px) {
   .center-paragraph {
-    font-size: 16px;
+    font-size: 14px;
     max-width: 90%;
   }
 }
 
 @media (max-width: 480px) {
   .center-paragraph {
-    font-size: 15px;
+    font-size: 13.5px;
     max-width: 95%;
     text-align: center;
   padding-bottom: 50px;
