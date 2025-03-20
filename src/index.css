@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&family=Spicy+Rice&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  min-height: 100vh;
+  background-image: url(./assets/bg.jpg);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  overflow: hidden;
+  animation: bgAnimation 10s infinite alternate ease-in-out;
+}
+
+@keyframes bgAnimation {
+  0% {
+    filter: brightness(100%);
+  }
+ 
+}
+.container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.bubbles{
+position: relative;
+display: flex;
+}
+.bubbles span{
+  position: relative;
+  width: 20px;
+  height: 18px;
+  margin: 0 4px;
+  border-radius: 50%;
+  background: transparent; 
+  box-shadow: 1px 1px 20px #078ae1, 
+              0 0 50px #c0eafc, 
+              0 0 100px #05a7f2;
+
+  animation: animate 15s linear infinite;
+  animation-duration: calc(160s / var(--i));
+}
+.bubbles span:nth-child(even){
+  background:1px 1px 20px rgb(254, 253, 248);
+  box-shadow: 1px 1px 20px rgb(235, 233, 223),
+  0 0 50px rgb(249, 248, 243), 0 0 100px rgb(7, 157, 226) ;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    transform: translateY(100vh) scale(0);
+  }
+  100%{
+    transform: translateY(-10vh) scale(1);
+  }
+}
+@media (max-width: 768px) {
+  .bubbles span {
+    width: 50px;   
+    height: 10px;
+    margin: 0 2px; 
+    animation-duration: calc(160s / var(--i)); 
+  }
+}
+
+@media (max-width: 480px) {
+  .bubbles span {
+    width: 35px;   
+    height: 8px;
+    margin: 0 1px;
+    animation-duration: calc(120s / var(--i));
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80px; 
+  height: 80px;
+  border-radius: 50%;  
+  object-fit: cover; 
+  border: 2px solid white; 
+  box-shadow: 1px 1px 20px rgb(33, 164, 220);
+  z-index: 1000; 
+}
+
+
+@media (max-width: 480px) {
+  .logo {
+    width: 40px; 
+    height: 40px;
+    top: 10px;
+    left: 10px;
+    
+  }
+}
+ 
+.center-text {
+  position: absolute;
+  top: 35%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  z-index: 10;
+  background-image: url(./assets/ice.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+@media (max-width:480px){
+  .center-text{
+    font-size: 0.5 rem;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .center-text {
+    font-size: 13.5px;
+    margin-right: 50px; 
+    
+  }
+}
+
+.clg-text {
+  margin-top: 0px; 
+  text-align: center; 
+}
+
+
+.clg-text h1,
+.clg-text h2,
+.clg-text h3 {
+  color: white;
+  font-size: 34px; 
+  margin: 0;
+  margin-right: 60px 
+}
+
+
+.clg-text h2 {
+  margin-top: 2px;
+}
+
+.clg-text h3 {
+  margin-top: 2px;
+}
+
+
+@media (max-width: 768px) {
+  .clg-text {
+    margin-top: 80px; 
+    margin-left: 40px;
+  }
+  .clg-text h1 {
+    font-size: 32px;
+  }
+  .clg-text h2 {
+    font-size: 20px;
+  }
+  .clg-text h3 {
+    font-size: 31px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clg-text {
+    margin-top: 20px; 
+  }
+  .clg-text h1 {
+    font-size: 20px;
+  }
+  .clg-text h2 {
+    font-size: 15px;
+  }
+  .clg-text h3 {
+    font-size: 20px;
+  }
+}
+.center-paragraph {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 20px 20px 30px rgb(12, 124, 222);
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Jost";
+  max-width: 80%;
+  z-index: 10;
+  white-space: nowrap;
+  font-style: none;
+  
+}
+
+
+@media (max-width: 768px) {
+  .center-paragraph {
+    font-size: 14px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .center-paragraph {
+    font-size: 13.5px;
+    max-width: 95%;
+    text-align: center;
+  padding-bottom: 50px;
+  }
+}
+.register-button {
+  text-align: center;
+  margin-top: 290px;  
+  position: absolute;
+  margin-left: 42%;
+}
+
+.register-btn {
+  background:linear-gradient(135deg, #00203F, #005F99, #00C8FF);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 1px 1px 30px rgb(151, 197, 221);
+}
+
+.register-btn:hover {
+  background: linear-gradient(135deg,#f15405 30%,#e29208,#fd530a );
+  box-shadow: 1px 1px 20px gold;
+  color: rgb(252, 244, 244);
+}
+
+@media (max-width: 480px) {
+  .register-button{
+ white-space: nowrap;
+ right: 30%;
+ top: 10px;
+}}
+
+
+
+.tagline {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "jost";
+  margin: 20px 0;
+  color: #f7c708; 
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+}
+
+.animate-tagline {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px) scale(0.8);
+  animation: fade-slide-scale 0.8s ease-in-out forwards;
+}
+
+@media (max-width:480px) {
+  .tagline{
+    font-size: 10px;
+    top: 27px;
+  }
+  
+}
+
+@keyframes fade-slide-scale {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(10px) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+nav{
+  position: absolute;
+  margin-left: 70%;
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {  
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #9b07f7;
+}
+.insta{
+  color: #00bfff;
+}
