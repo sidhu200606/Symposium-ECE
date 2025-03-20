@@ -1,5 +1,5 @@
 import React from 'react';
-import "./nontech.css";
+import "./Nontech.css";
 import fun from "./assets/fun.png";
 import flick from "./assets/flick.jpeg";
 import stove from "./assets/stove.jpeg";
