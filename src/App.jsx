@@ -82,7 +82,7 @@ const Home = () => {
           padding: "10px",
           textAlign: "center",
           zIndex: 1000,
-          marginBottom: "10px",
+          marginBottom: "20px",
         }}
       >
         <marquee
